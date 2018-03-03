@@ -12,9 +12,9 @@
          :data-element-group='element.elementGroup' :data-group='element.group' :data-period='element.period'
          class='element' :class="element.symbol && element.symbol.toLowerCase()"
          :style="{ opacity: filteredElements.includes(element.atomicNumber) ? 1 : 0.25 }">
-      <router-link :to="'/element/' + element.atomicNumber">
+      <a :to="'/element/' + element.atomicNumber" disabled="disabled">
         <element-definition v-if="filteredElements.includes(element.atomicNumber)" class="u-aspect-ratio" :element="element" :detailed="true"></element-definition>
-      </router-link>
+      </a>
     </div>
 
     <div class="element lanthanoid" data-element-group="lanthanoid" :style="{ opacity: filteredElementsContainElementsOfGroup('lanthanoid') ? 1 : 0.25 }"></div>
