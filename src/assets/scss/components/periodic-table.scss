@@ -25,7 +25,7 @@ $grid-gutter: 0.25vw;
 .c-information {
   margin: $grid-gutter;
   overflow: auto;
-  max-height: 14.1vw;
+  max-height: 13.5vw;
 
   @media (max-width: map-get($grid-breakpoints, lg)) {
     margin: $spacer / 2;
