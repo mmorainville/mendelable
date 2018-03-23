@@ -14,10 +14,18 @@ $grid-gutter: 0.25vw;
   }
 }
 
+.element-general-properties {
+  background:
+    linear-gradient($gray-light, $gray-light),
+    radial-gradient(farthest-side at 50% 100%, rgba(255, 255, 255 , .3), transparent) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 98%, 100% 4%;
+}
+
 .c-information {
   margin: $grid-gutter;
   overflow: auto;
-  max-height: 14.1vw;
+  max-height: 13.5vw;
 
   @media (max-width: map-get($grid-breakpoints, lg)) {
     margin: $spacer / 2;
